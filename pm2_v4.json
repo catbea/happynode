@@ -1,0 +1,12 @@
+{
+  "apps" : [{
+    "name"      : "happyNode:18001",
+    "max_memory_restart": "512M",
+    "log_date_format": "YYYY-MM-DD HH:mm:ss SSS",
+    "script": "index.js",
+    "env": {
+      "NODE_ENV": "test",
+      "node_port": 18001
+    }
+  }],
+}

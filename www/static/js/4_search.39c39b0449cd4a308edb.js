@@ -1,0 +1,2 @@
+webpackJsonp([4],{QZES:function(t,e){},dwST:function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var r={render:function(){var t=this.$createElement,e=this._self._c||t;return e("div",[e("h1",[this._v("你的文字哦："+this._s(this.text))])])},staticRenderFns:[]};var s=n("VU/8")({name:"search",data:function(){return{text:this.$route.params.text}}},r,!1,function(t){n("QZES")},"data-v-200104c8",null);e.default=s.exports}});
+//# sourceMappingURL=4_search.39c39b0449cd4a308edb.js.map

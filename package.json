@@ -1,0 +1,136 @@
+{
+  "name": "flow_chart",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index",
+    "test": "istanbul cover ./node_modules/mocha/bin/_mocha -- -r co-mocha --reporter mochawesome --reporter-options reportDir=./tests/mochawesome-report --timeout 20000 --recursive ./sky/tests/",
+    "run": "nodemon index",
+    "lint": "standard"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "co-mocha": "*",
+    "esformatter": "*",
+    "eslint-plugin-html": "*",
+    "gulp": "*",
+    "gulp-standard": "*",
+    "istanbul": "*",
+    "mkdirp-promise": "*",
+    "mocha": "*",
+    "mochawesome": "*",
+    "nodemon": "*",
+    "snazzy": "*",
+    "standard": "*"
+  },
+  "dependencies": {
+    "bluebird": "*",
+    "cheerio": "*",
+    "co": "*",
+    "co-exec": "*",
+    "co-fs": "^1.2.0",
+    "co-redis": "*",
+    "co-request": "*",
+    "co-wechat-api": "3.2.0",
+    "co-wechat-oauth": "2.0.1",
+    "co-xml2js": "*",
+    "ethereum-address": "^0.0.4",
+    "ethereumjs-tx": "*",
+    "exceljs": "*",
+    "figlet": "*",
+    "iconv-lite": "^0.4.19",
+    "j2sql": "*",
+    "koa": "*",
+    "koa-better-body": "*",
+    "koa-convert": "*",
+    "koa-logger": "*",
+    "koa-router": "*",
+    "koa-socket": "*",
+    "koa-static": "*",
+    "koa2-cors": "*",
+    "meeko": "*",
+    "node-cmd": "^3.0.0",
+    "nodemailer": "*",
+    "redis": "*",
+    "request": "*",
+    "request-promise": "*",
+    "requireindex": "*",
+    "sleep": "^5.1.1",
+    "socket.io": "*",
+    "socket.io-client": "*",
+    "superagent": "^3.6.0",
+    "ua-device": "^0.1.10",
+    "xml2js": "*"
+  },
+  "esformatter": {
+    "plugins": [
+      "esformatter-quotes"
+    ],
+    "quotes": {
+      "type": "single"
+    }
+  },
+  "standard": {
+    "rules": {
+      "no-callback-literal": 0
+    },
+    "globals": [
+      "$",
+      "define",
+      "db",
+      "redis",
+      "WT",
+      "viewLoad",
+      "$DB",
+      "showTips",
+      "ActiveXObject",
+      "laytpl",
+      "api"
+    ],
+    "plugins": [
+      "html"
+    ]
+  },
+  "eslintConfig": {
+    "plugins": [
+      "html"
+    ],
+    "globals": {
+      "$": true,
+      "db": true,
+      "redis": true,
+      "define": true,
+      "require": true,
+      "WT": true,
+      "$DB": true,
+      "viewLoad": true
+    },
+    "env": {
+      "browser": true,
+      "node": true,
+      "es6": true
+    },
+    "rules": {
+      "no-unused-vars": 1,
+      "camelcase": 0,
+      "curly": 2,
+      "brace-style": [
+        2,
+        "1tbs"
+      ],
+      "quotes": [
+        1,
+        "single"
+      ],
+      "space-infix-ops": 1,
+      "no-console": 1,
+      "complexity": [
+        1,
+        8
+      ]
+    },
+    "extends": "standard"
+  }
+}
